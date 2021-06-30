@@ -66,9 +66,12 @@
             <w-icon class="pr3 pl3 pb2" color="error">mdi mdi-heart</w-icon> in
             the UK using VueJs 3.
           </p>
-          <p class="body text-center">Download the source here</p>
+          <p class="body text-center">
+            Download the source
+            <a href="https://github.com/doobrie/simple-todo-list">here</a>
+          </p>
           <p class="body text-center">Copyright(c) David Salter 2021</p>
-          <p class="body text-right">version 1.0.0</p>
+          <p class="body text-right">version 1.0.1</p>
         </div>
       </w-dialog>
     </div>
@@ -84,7 +87,9 @@ import '@mdi/font/css/materialdesignicons.min.css';
 export default {
   setup() {
     onMounted(() => {
-      todoItems.value = JSON.parse(window.localStorage.getItem('todoList'));
+      if (window.localStorage.getItem('todoList')) {
+        todoItems.value = JSON.parse(window.localStorage.getItem('todoList'));
+      }
     });
 
     const newTodo = ref('');
