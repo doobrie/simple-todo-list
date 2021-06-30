@@ -1,5 +1,5 @@
 {
-  "name": "vue-todo",
+  "name": "simple-todo-list",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/font": "^5.9.55",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "material-design-icons": "^3.0.1",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.0",
+    "wave-ui": "^2.22.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
